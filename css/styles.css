@@ -486,21 +486,17 @@ img {
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
+  margin-left: 80px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .footer-form-form {
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-
-.footer-form-lable {
+  justify-self: center;
+  margin-left: 80px;
   gap: 24px;
 }
 
@@ -518,7 +514,7 @@ img {
   color: #ffffff;
 }
 
-input[type="email"]:placeholder {
+.footer-form-input::placeholder {
   color: #ffffff;
 }
 
@@ -602,7 +598,7 @@ input[type="email"]:placeholder {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-icon-buttom {
+.close-icon-button {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -660,7 +656,7 @@ input[type="email"]:placeholder {
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-textarea {
@@ -732,7 +728,6 @@ input[type="email"]:placeholder {
   display: block;
   min-width: 169px;
   height: 56px;
-  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
