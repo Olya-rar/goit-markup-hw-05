@@ -656,7 +656,7 @@ img {
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
-  transition: fill250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #2e2f42;
 }
 
@@ -686,7 +686,7 @@ img {
 }
 
 .label-contacts {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .checkbox-contacts {
@@ -714,7 +714,7 @@ img {
   fill: transparent;
 }
 
-.checkbox-input:checked + form-checkbox + checkbox-span {
+checkbox-input:checked + form-checkbox + checkbox-span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
