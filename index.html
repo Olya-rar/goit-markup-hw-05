@@ -473,6 +473,7 @@
           <label class="footer-form-lable">
             <input
               class="footer-form-input"
+              name="email"
               type="email"
               placeholder="E-mail"
             />
@@ -486,7 +487,7 @@
         </form>>
       </div>
     </footer>
-    <div class="modal-overlay">
+    <div class="modal-overlay is-open">
       <div class="modal">
         <button type="button" class="close-button">
           <svg class="close-icon-button" width="8" height="8">
@@ -549,18 +550,21 @@
           </div>
           <div class="checkbox-contacts">
             <input
-              class="checkbox-input"
+              class="checkbox-input visually-hidden"
               type="checkbox"
               name="user-privacy"
               id="user-privacy"
               value="true"
             />
-            <label class="form-checkbox" for="user-privacy"
-              >I accept the terms and conditions of the<span
-                class="checkbox-span"
-                ><svg class="checkbox-svg" width="10" height="8">
-                  <use href="./images/icons.svg#Checkbox"></use></svg></span
-            ></label>
+            <label class="form-checkbox" for="user-privacy">
+              <span class="checkbox-span">
+                <svg class="checkbox-svg" width="10" height="8">
+                  <use href="./images/icons.svg#icone-Frame-3"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href="" class="checkbox-policy">Privacy Policy</a>
+            </label>
           </div>
           <button type="button" class="final-button">Send</button>
         </form>
