@@ -472,7 +472,7 @@
     <div class="modal-overlay is-open">
       <div class="modal">
         <button type="button" class="close-button">
-          <svg class="close-icon" wight="8px" height="8px">
+          <svg class="close-icon" widht="8px" height="8px">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
@@ -488,26 +488,67 @@
                 class="form-input"
                 autofocus
               />
-              <svg class="modal-icon" wight="18" height="24">
+              <svg class="modal-icon" widht="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
           </div>
           <div class="label-contacts">
-            <label class="form-label" for="user-name">Phone</label>
+            <label class="form-label" for="user-phone">Phone</label>
             <div class="input-contacts">
               <input
-                type="text"
-                name="user-name"
-                id="user-name"
+                type="tel"
+                name="user-phone"
+                id="user-phone"
                 class="form-input"
                 autofocus
               />
-              <svg class="modal-icon" wight="18" height="24">
+              <svg class="modal-icon" widht="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="label-contacts">
+            <label class="form-label" for="user-email">Email</label>
+            <div class="input-contacts">
+              <input
+                type="email"
+                name="user-email"
+                id="user-email"
+                class="form-input"
+                autofocus
+              />
+              <svg class="modal-icon" widht="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </div>
+          <div class="label-contacts">
+            <label class="form-label" for="user-comment">Comment</label>
+            <div class="textarea-contacts">
+              <textarea
+                class="form-textarea"
+                name="user-comment"
+                id="user-comment"
+                placeholder="Text input"
+              ></textarea>
+            </div>
+          </div>
+          <div class="checkbox-contacts">
+            <input
+                type="checkbox"
+                name="user-privacy"
+                id="user-privacy"
+                value="true"
+                class="checkbox-input"
+              />
+              <label class="form-checkbox" for="user-privacy"></label>
+              <p class="checkbox-text">I accept the terms and conditions of the <span class="checkbox-span"><svg class="checkbox-svg" width="10" height="8">
+                <use href="./images/icons.svg#Checkbox"></use>
+              </svg></span></p>
+                         </div>
+          </div>
+          <button type="button" class="final-button">Send</button>
         </form>
       </div>
     </div>

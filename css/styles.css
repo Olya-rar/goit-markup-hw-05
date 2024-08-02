@@ -518,6 +518,7 @@ img {
   border-radius: 4px;
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 72px 24px 24px 24px;
 }
 
 .close-button {
@@ -525,6 +526,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   border-radius: 50%;
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -538,26 +540,27 @@ img {
 }
 
 .close-icon {
-  fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-icon:hover {
+.close-icon:hover,
+.close-icon:focus {
   fill: #fff;
 }
 
-.close-button:hover {
-  border-radius: 100%;
-  fill: #404bbf;
+.close-button:hover,
+.close-button:focus {
+  background-color: #404bbf;
+  border: none;
 }
 
 .modal-text {
   font-weight: 500;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  margin-top: 24px;
   margin-bottom: 16px;
 }
 
@@ -569,6 +572,12 @@ img {
 }
 
 .form-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  display: block;
+  margin-bottom: 4px;
 }
 
 .input-contacts {
@@ -577,22 +586,17 @@ img {
 
 .form-input {
   background-color: transparent;
-  padding: 4px;
   padding-left: 38px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  line-height: 2;
-  letter-spacing: 0.04em;
   height: 40px;
   width: 100%;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:focus-within {
+.form-input:focus {
   border: 1px solid #4d5ae5;
-}
-
-.form-input:focus-within .modal-icon {
-  fill: #4d5ae5;
 }
 
 .modal-icon {
@@ -602,4 +606,88 @@ img {
   left: 16px;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.textarea-contacts {
+  margin-bottom: 16px;
+}
+
+.form-textarea {
+  width: 100%;
+  height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 8px 16px;
+  outline: transparent;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-textarea:focus {
+  border-color: #4d5ae5;
+}
+
+.checkbox-contacts {
+  margin-bottom: 24px;
+}
+
+.checkbox-input.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.form-checkbox {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.checkbox-span {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
+.checkbox-span:checked {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+
+.final-buttom {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #4d5ae5;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
