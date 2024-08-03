@@ -619,10 +619,12 @@ img {
   margin-bottom: 16px;
 }
 
-.label-contacts-one,
-.label-contacts-two,
-.label-contacts-three {
+.label-contacts {
   margin-bottom: 8px;
+}
+
+.label-contacts-comments {
+  margin-bottom: 16px;
 }
 
 .form-label {
