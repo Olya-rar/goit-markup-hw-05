@@ -620,7 +620,8 @@ img {
 }
 
 .label-contacts-one,
-.label-contacts-two {
+.label-contacts-two,
+.label-contacts-three {
   margin-bottom: 8px;
 }
 
@@ -684,10 +685,6 @@ img {
 
 .form-textarea:focus {
   border-color: #4d5ae5;
-}
-
-.label-contacts-three {
-  margin-bottom: 8px;
 }
 
 .checkbox-contacts {
